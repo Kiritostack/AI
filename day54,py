@@ -1,0 +1,21 @@
+def calculate_average(*scores):
+    print(type(scores))
+    return sum(scores) / len(scores)
+
+print(calculate_average(80, 90, 100))
+def show_info(**data):
+    print(data["model"])
+    print(data["accuracy"])
+
+show_info(model="GPT", accuracy=0.96)
+def model_info(name, *scores, **details):
+    print(name)
+    print(scores)
+    print(details)
+
+model_info(
+    "GPT",
+    90, 95, 98,
+    company="OpenAI",
+    version=5
+)
