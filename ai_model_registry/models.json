@@ -1,0 +1,20 @@
+{
+    "created_at": "2026-08-25T21:24:25.401970",
+    "models": [
+        {
+            "name": "GPT-4o",
+            "accuracy": 0.88,
+            "company": "OpenAI"
+        },
+        {
+            "name": "Claude 3.5 Sonnet",
+            "accuracy": 0.92,
+            "company": "Anthropic"
+        },
+        {
+            "name": "Gemini 1.5 Pro",
+            "accuracy": 0.86,
+            "company": "Google"
+        }
+    ]
+}
