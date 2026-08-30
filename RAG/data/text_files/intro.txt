@@ -1,0 +1,40 @@
+
+Artificial Intelligence
+
+Artificial Intelligence, or AI, is the field of computer science focused on creating systems that can perform tasks that normally require human intelligence.
+
+Machine Learning
+
+Machine Learning is a subset of Artificial Intelligence. It allows computers to learn patterns from data and make predictions or decisions without being explicitly programmed for every situation.
+
+Deep Learning
+
+Deep Learning is a subset of Machine Learning that uses neural networks with multiple layers. It is commonly used for image recognition, speech recognition, natural language processing, and generative AI.
+
+Generative AI
+
+Generative AI refers to AI systems that can create new content such as text, images, audio, video, and code. Large Language Models such as GPT are examples of generative AI systems.
+
+RAG
+
+RAG stands for Retrieval-Augmented Generation. RAG combines information retrieval with a language model. Instead of relying only on information learned during training, a RAG system retrieves relevant information from an external knowledge source and provides it to the language model as context.
+
+RAG Pipeline
+
+A typical RAG pipeline contains several steps. First, documents are collected and loaded into the application. The documents are then split into smaller chunks. Each chunk is converted into an embedding and stored in a vector database. When a user asks a question, the question is converted into an embedding and similar chunks are retrieved from the vector database. The retrieved information is then provided to the language model to generate an answer.
+
+Embeddings
+
+Embeddings are numerical representations of text. Similar pieces of text generally have similar vector representations. Embeddings allow a system to perform semantic similarity searches.
+
+Vector Database
+
+A vector database stores numerical vectors called embeddings. It allows applications to efficiently find information that is semantically similar to a query.
+
+LangChain
+
+LangChain is a framework that provides tools for building applications powered by language models. It can be used for document loading, text splitting, embeddings, retrieval, and building RAG pipelines.
+
+Data Ingestion
+
+Data ingestion is the process of collecting data from sources and bringing it into an application so that it can be processed and used. In a RAG application, data ingestion can involve loading files, splitting documents into chunks, generating embeddings, and storing those embeddings in a vector database.

@@ -1,7 +1,7 @@
 import cv2 as cv
 import numpy as np
-img=cv.imread('Photo/anime-cityscape-sunset.jpg')
-img2=cv.resize(img,(800,600))
+img=cv.imread('C:\Python\AI\Opencv\Photo\Senami.jpeg')
+img2=cv.resize(img,(400,600))
 cv.imshow('city',img2)
 def translate(img,x,y):
     transMat=np.float32([[1,0,x],[0,1,y]])
@@ -20,7 +20,7 @@ def rotate(img,angle,rotpoint=None):
         rotpoint=(width//2,height//2)
     rotmat=cv.getRotationMatrix2D(rotpoint,angle,1.0)
     dimensions=(width,height)
-    return cv.warpAffine(img2,rotmat,dimensions)
+    return cv.warpAffine(img,rotmat,dimensions)
 rotated=rotate(img2,45)
 cv.imshow('rotated',rotated)
 #resize
@@ -30,6 +30,6 @@ cv.imshow('resized',resized)
 flip=cv.flip(img2,-1)
 cv.imshow('flip',flip)
 #cropped
-cropped=img2[200:300,400:500]
+cropped=img2[200:300,100:300]
 cv.imshow('cropped',cropped)
 cv.waitKey(0)
