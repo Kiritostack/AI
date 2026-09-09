@@ -1,5 +1,5 @@
 import cv2 as cv
-img=cv.imread('Photo/Senami.jpeg')
+img=cv.imread('C:\Python\AI\Opencv\Photo\Senami.jpeg')
 cv.imshow('Senami',img) 
 #reading videos
 '''Capture=cv.VideoCapture('Video/download_20260814_214443_0000.mp4')

@@ -1,6 +1,6 @@
 import cv2 as cv
 
-img=cv.imread('Photo/Senami.jpeg')
+img=cv.imread('C:\Python\AI\Opencv\Photo\Senami.jpeg')
 # cv.imshow('img',img)
 resized=cv.resize(img,(400,600))
 gray=cv.cvtColor(resized,cv.COLOR_BGR2GRAY)

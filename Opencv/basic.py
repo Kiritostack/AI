@@ -5,7 +5,7 @@ def rescale(frame,scale=0.1):
     height=int(frame.shape[0]*scale)
     dimensions=(width,height)
     return cv.resize(frame,dimensions,interpolation=cv.INTER_AREA)
-img=cv.imread('Photo/anime-cityscape-sunset.jpg')
+img=cv.imread('C:\Python\AI\Opencv\Photo\Senami.jpeg')
 img2=rescale(img)
 cv.imshow('Senami',img2)
 #converting to grayscale

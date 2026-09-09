@@ -6,14 +6,14 @@ def rescale(frame,scale=0.5):
     dimensions=(width,height)
     return cv.resize(frame,dimensions,interpolation=cv.INTER_AREA)
 
-img=cv.imread('Photo/Senami.jpeg')
+img=cv.imread('C:\Python\AI\Opencv\Photo\Senami.jpeg')
 img_resized=rescale(img)
 cv.imshow('Senami',img_resized)
 def changeres(width,height):
    #Live Video
    Capture.set(3,width)
    Capture.set(4,height)
-Capture=cv.VideoCapture('Video/download_20260814_214443_0000.mp4')
+Capture=cv.VideoCapture('C:\Python\AI\Opencv\Video\download_20260814_214443_0000.mp4')
 while True:
     isTrue,frame=Capture.read()
     frame_resized=rescale(frame)
