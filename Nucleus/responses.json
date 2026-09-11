@@ -1,0 +1,12 @@
+{
+    "intent_responses": {
+        "greetings": "Hello Sir",
+        "creator": "Kirito created me."
+    },
+    "learned_responses": {
+        "hi": "c:\\Python\\.venv\\Scripts\\python.exe c:/Python/AI/Nucleus/Nucleus.py",
+        "hello": "Hello sir",
+        "creator": "Kirito created me",
+        "ola": "Hello sir"
+    }
+}
