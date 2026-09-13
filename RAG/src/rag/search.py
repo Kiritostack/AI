@@ -5,7 +5,7 @@ from langchain_groq import ChatGroq
 load_dotenv()
 
 class RAGSearch:
-    def __init__(self, persist_dir: str = "faiss_store", embedding_model: str = "all-MiniLM-L6-v2", llm_model: str = "gemma2-9b-it"):
+    def __init__(self, persist_dir: str = "faiss_store", embedding_model: str = "all-MiniLM-L6-v2", llm_model: str = "openai/gpt-oss-120b"):
         self.vectorstore = FaissVectorStore(persist_dir, embedding_model)
         # Load or build vectorstore
         faiss_path = os.path.join(persist_dir, "faiss.index")
@@ -16,7 +16,7 @@ class RAGSearch:
             self.vectorstore.build_from_documents(docs)
         else:
             self.vectorstore.load()
-        groq_api_key = ""
+        groq_api_key = "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"
         self.llm = ChatGroq(groq_api_key=groq_api_key, model_name=llm_model)
         print(f"[INFO] Groq LLM initialized: {llm_model}")
 
